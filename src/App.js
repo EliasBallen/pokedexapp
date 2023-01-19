@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
+import { PokemonContextProvider } from 'context/pokemonContext';
+import Details from 'pages/Details';
+import Home from 'pages/Home';
+import { Route } from 'wouter';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <section className="App-content
+      ">
+        <img src='pokedextitle.png' id='pokeapptitle' />
+
+      <PokemonContextProvider >
+      
+       <Route component={Home}
+        path="/"/>
+
+        <Route 
+      component={Details}
+      path='/pokemon/:id'/>
+
+
+      </PokemonContextProvider>
+      </section>
     </div>
   );
 }

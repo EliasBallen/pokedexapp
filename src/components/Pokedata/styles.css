@@ -1,0 +1,89 @@
+
+.headzone-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    justify-items: center;
+    
+}
+
+.details-image{
+    width: min(50vw,350px);
+    height: auto;
+
+}
+.details-head{
+    padding: 0 0 30px;
+    width: min(95%,800px);
+    margin-bottom: 15px;
+    display: grid;
+    justify-content: center;
+}
+
+.details-card{
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+}
+.details-appearance-stats{
+    width:min(95%,800px);
+    margin-bottom: 15px;
+}
+.details-appearance{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.details-appeareance-item{
+    padding: 0 10px;
+}
+
+.details-stats{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 70% 30%;
+}
+.details-stats-item{
+    padding: 0 10px;
+    margin: auto;
+}
+.details-abilitieshead{
+    width: 97%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.details-abilities{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.details-abilities-item{
+    padding: 0 10px;
+    margin: auto;
+}
+.details-moves-buttons{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+.details-moves-buttons-item{
+    padding: 0 0;
+    width: 100%;
+    margin: auto;
+}
+.details-moves-buttons-item:hover{
+   background-color: white;
+   color: #282c34;
+}
+
+.details-moveshead{
+    width: 97%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.button-foward{
+    border-radius: 0 0 16px 0;
+}
+.button-reverse{
+    border-radius: 0 0 0 16px;
+}

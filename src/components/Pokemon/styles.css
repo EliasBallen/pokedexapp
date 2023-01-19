@@ -1,0 +1,24 @@
+.typegrid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(32px,1fr));
+    text-align:center;
+    
+}
+.Pokemon{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 180px;
+    height: 240px;
+}
+.pokename{
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+.typetitle{
+    margin: 0;
+    padding: 0;
+    line-height: 2.2;
+    font-size: 0.9rem;
+}
